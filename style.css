@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: Quicksand, sans-serif;
+}
+.top-logo {
+  text-align: center;
+  padding: 8px;
+}
+.top-logo img {
+  width: 310px;
+}
+@media screen and (max-width: 1024px) {
+  .top-logo {
+    padding: 0px;
+  }
+  .top-logo img {
+    width: 250px;
+  }
+}
+.splash {
+  height: 500px;
+  background-image: url("img/websiteBackgroundImage.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.splash-content {
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  color: white;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+@media screen and (max-width: 1024px) {
+  .splash-content {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+.splash-header h1 {
+  font-family: Mulish, sans-serif;
+  margin: 0;
+  font-size: 62px;
+  font-weight: 400;
+  text-align: center;
+}
+@media screen and (max-width: 1280px) {
+  .splash-header h1 {
+    font-size: 48px;
+  }
+}
+.splash-sub {
+  font-size: 22px;
+  font-weight: 300px;
+  text-align: center;
+}
+.splash-action a {
+  display: inline-block;
+  padding: 20px 40px;
+  border: solid 1px transparent;
+  background-color: rgb(108, 26, 117);
+  text-decoration: none;
+  color: white;
+  border-radius: 48px;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .splash-action {
+    width: 100%;
+    text-align: center;
+  }
+  .splash-action a {
+    width: 75%;
+  }
+}
+.splash-action a:hover {
+  background-color: rgb(144, 38, 155);
+}
+.services-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  justify-content: center;
+}
+.services-section {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 32px;
+  align-items: stretch;
+  max-width: 475px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1024px) {
+  .services-section {
+    max-width: 50%;
+  }
+}
+.services-header {
+  font-size: 48px;
+  color: rgb(77, 2, 84);
+  font-family: Mulish, sans-serif;
+  margin: 48px;
+  text-align: center;
+}
+.services-sub {
+  color: rgb(77, 2, 84);
+  font-size: 30px;
+  text-align: center;
+  min-height: 75px;
+}
+.services-text {
+  line-height: 28px;
+  font-size: 18px;
+  font-weight: 200;
+  text-align: center;
+  color: rgb(94, 94, 94);
+}
+@media screen and (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+  }
+  .services-section {
+    max-width: 100%;
+  }
+}
