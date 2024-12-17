@@ -1,0 +1,10 @@
+{
+  "scope":"/",
+  "start_url":"/",
+  "display":"standalone",
+  "icons":[{"sizes":"512x512","type":"image/png","src":"img/omnible_tech_logo_X.png"}],
+  "name":"Omnible Tech",
+  "short_name":"Omnible Tech",
+  "theme_color":"#4d0254",
+  "background_color":"#4d0254"
+}
