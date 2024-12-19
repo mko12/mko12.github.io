@@ -27,6 +27,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- Google tag (gtag.js) -->
+    <!-- TODO: set a google analytics account and replace XXXXXXXX.
+               It is in 2 places, in the script src and the config command.
+      -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied'
+      });
+      const cookiesAccepted = localStorage.getItem('cookiesAccepted');
+      if (cookiesAccepted === 'ok') {
+        gtag('consent', 'update', {
+          'analytics_storage': 'granted'
+        });
+      }
+      <!-- TODO: replace XXXXXX ->
+      gtag('config', 'G-XXXXXXXX');
+    </script>
   </head>
   <body>
     <div class="top-logo">
@@ -102,6 +126,104 @@
           accurate and of high quality.
         </div>
       </div>
+    </div>
+    <div class="about-container">
+      <div class="about-title">
+        About Omnible Tech
+      </div>
+      <div class="about-section">
+        <img src="https://img1.wsimg.com/isteam/stock/33920/:/cr=t:12.5%25,l:0%25,w:100%25,h:75%25/rs=w:600,h:300,cg:true">
+        <div>
+          <div class="about-sub">
+            Our Mission
+          </div>
+          <div class="about-text">
+            At <b>Omnible Tech</b>, we are dedicated to <b>enabling and empowering
+            Life Science teams</b> through strategic, innovative and dependable
+            technology solutions, so they can focus on delivering effective
+            drugs to patients. Our role in <b>expediting the path toward a cure</b>
+            brings us immense gratification!
+          </div>
+        </div>
+      </div>
+      <div class="about-section about-reverse">
+        <img src="https://img1.wsimg.com/isteam/stock/28715/:/cr=t:11.2%25,l:0%25,w:100%25,h:75%25/rs=w:1200,h:600,cg:true">
+        <div>
+          <div class="about-sub">
+            Our Expertise
+          </div>
+          <div class="about-text">
+            Our team of highly skilled and experienced professionals possess
+            expertise in diverse areas of technology and IT for <b>Life Science
+            companies</b>, including multiple LIMS expertise and customization,
+            data management, CRO on boarding and integration, custom software
+            development, cloud computing and more.<br>
+            We give our clients a competitive edge while maximizing their
+            scientific team's ROI (both in time and efficiency).  We have
+            extensive experience in Dotmatics, Revvity Signals,
+            Benchling and other <b>LIMS</b> systems.
+          </div>
+        </div>
+      </div>
+      <div class="about-section">
+        <img src="https://img1.wsimg.com/isteam/ip/62f9fa12-1a9b-4fca-9b0a-9215fc0ca932/blob-ba94d22.png/:/cr=t:12.36%25,l:0%25,w:100%25,h:75.28%25/rs=w:1200,h:600,cg:true">
+        <div>
+          <div class="about-sub">
+            Our Process
+          </div>
+          <div class="about-text">
+            We follow a highly collaborative process to deliver customized
+            scientific systems solutions that meet the unique needs of each of
+            our clients. Our process involves understanding the client's
+            requirements, developing a prototype, testing, and deploying the
+            final solution with ongoing support and maintenance.<br>
+            We stay up-to-date with the latest innovations and technologies in
+            Life Sciences and scientific systems, to ensure that we deliver the
+            best solutions to our clients.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="contact-section">
+      <div class="contact-title">
+        Contact Us
+      </div>
+      <div class="contact-sub">
+        Questions or Comments?
+      </div>
+      <div class="contact-text">
+        Send us a message, and we will get back to you promptly.
+      </div>
+      <div class="contact-sub">
+        Omnible Tech
+      </div>
+      <div class="contact-text">
+        San Diego, 92122, CA, USA
+      </div>
+      <div class="contact">
+        <a href="tel:8588485377">
+          (858) 848-5377
+        </a>
+      </div>
+      <div class="contact">
+        <a href="mailto:info@omnibletech.com">
+          info@omnibletech.com
+        </a>
+      </div>
+      <div class="contact-copyright">
+        Copyright © 2024 Omnible Tech - All Rights Reserved.
+      </div>
+    </div>
+    <div id="cookies-container" class="cookies-container">
+      <div class="cookies-title"> Accept cookies </div>
+      <div class="cookies-text">
+        We collect cookies to analyze our website traffic
+        and performance; we never collect any personal data.
+      </div>
+      <button onclick="acceptCookies()" class="cookies-button">
+        OK
+      </button>
+      <script src="script.js"></script>
     </div>
   </body>
 </html>
