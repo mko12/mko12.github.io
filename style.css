@@ -131,3 +131,123 @@ body {
     max-width: 100%;
   }
 }
+.about-container {
+  background-color: rgb(246, 246, 246);
+  padding: 38px 0;
+  margin: 32px 0;
+}
+.about-title {
+  font-size: 38px;
+  color: rgb(77, 2, 84);
+  font-family: Mulish, sans-serif;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.about-section {
+  display: flex;
+  align-items: start;
+  padding: 16px;
+  box-sizing: border-box;
+}
+.about-reverse {
+  flex-direction: row-reverse;
+}
+.about-section img {
+  width: 50%;
+  margin-bottom: 32px;
+}
+.about-text {
+  line-height: 28px;
+  color: rgb(87, 87, 87);
+  padding: 24px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    width: 100%;
+  }
+  .about-section img {
+    width: 100%;
+  }
+}
+.about-sub {
+  font-size: 32px;
+  color: rgb(77, 2, 84);
+  text-align: center;
+  font-weight: 400;
+}
+.contact-section {
+  text-align: center;
+  color: rgb(27, 27, 27);
+  padding-bottom: 32px;
+}
+.contact-title {
+  font-size: 32px;
+  color: rgb(77, 2, 84);
+  font-family: Mulish, sans-serif;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.contact-sub {
+  font-size: 28px;
+  font-weight: 400;
+  margin: 24px;
+}
+.contact-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(94, 94, 94);
+}
+.contact {
+  margin: 32px;
+}
+.contact a {
+  color: rgb(77, 2, 84);
+  text-decoration: none;
+}
+.contact-copyright {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(89, 89, 89);
+  margin: 32px;
+}
+.cookies-container {
+  position: fixed;
+  bottom: 18px;
+  width: 300px;
+  right: 18px;
+  border-radius: 8px;
+  background-color: rgb(108, 26, 117);
+  color: white;
+  padding: 16px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+@media screen and (max-width: 768px) {
+  .cookies-container {
+    right: calc(50% - 166px);
+  }
+}
+.cookies-title {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+.cookies-button {
+  background-color: white;
+  padding: 8px 32px;
+  border: solid 1px white;
+  border-radius: 8px;
+  margin-top: 24px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.cookies-button:hover {
+  background-color: rgb(232, 232, 232);
+}
+.cookies-button:active {
+  background-color: rgb(246, 246, 246);
+}
